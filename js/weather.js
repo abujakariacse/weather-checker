@@ -21,6 +21,6 @@ const displayTemp = (data) => {
   setInnerText("temperature", data.main.temp);
   setInnerText("weather-condition", data.weather[0].main);
 
-  const url = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  const url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   document.getElementById("weather-icon").setAttribute("src", url);
 };
